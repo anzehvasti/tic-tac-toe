@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-size: 1rem;
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boardStyle{
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.squareStyle{
+    background-color: #adadad18;
+    border: 1px solid rgb(177, 177, 177);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.squareStyle:hover{
+    background-color: #ff005596;
+}
+.welcome-wrapper{
+    flex-direction: column;
+}
+h1{
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    font-size: 64px !important;
+    line-height: 73px;
+    color: #FFFFFF;
+    text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-warning{
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    background: #FFC700;
+    box-shadow: 0px 0px 20px 2px #FFC700;
+    border-radius: 10px;
+    font-size: 25px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s !important;
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif !important;
+}
+.btn-warning:hover{
+    transform: scale(1.1);
+    background-color: #FFC700 !important;
+}
+
+.top-left{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+.cross-btm{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+.cross-btm-line{
+    position: absolute;
+    bottom: 60px;
+    left: 175px;
+}
+.o-btm{
+    position: absolute;
+    bottom: 250px;
+    left: 135px;
+}
+.o-top-line{
+    position: absolute;
+    top: 150px;
+    left: 25px;
+}
+.x-top-line{
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+h2{
+    color: white;
+    font-size: 2rem !important;
+    text-transform: uppercase;
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 576px) {
+    .top-left{
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+    .bottom-right{
+        position: absolute;
+        bottom: 85px;
+        right: 0;
+    }
+    .bottom-left{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+    }
+    .cross-btm{
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+    }
+    .cross-btm-line{
+        position: absolute;
+        bottom: 100px;
+        left: 80px;
+    }
+    .o-top-line{
+        position: absolute;
+        top: 150px;
+        left: 25px;
+    }
+    .x-top-line{
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+}
