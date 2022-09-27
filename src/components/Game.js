@@ -37,34 +37,6 @@ const Game = () => {
           {winner ? "Winner: " + winner : "Igralec: " + (xIsNext ? "X" : "O")}
         </p>
         {renderMoves()}
-        <img
-          className="top-left"
-          src={process.env.PUBLIC_URL + "img/cross1.svg"}
-        />
-        <img
-          className="bottom-right"
-          src={process.env.PUBLIC_URL + "img/cross2.svg"}
-        />
-        <img
-          className="bottom-left"
-          src={process.env.PUBLIC_URL + "img/o1.svg"}
-        />
-        <img
-          className="cross-btm"
-          src={process.env.PUBLIC_URL + "img/cross-btm.svg"}
-        />
-        <img
-          className="cross-btm-line"
-          src={process.env.PUBLIC_URL + "img/cross-btm-line.svg"}
-        />
-        <img
-          className="o-top-line"
-          src={process.env.PUBLIC_URL + "img/o-top-line.svg"}
-        />
-        <img
-          className="x-top-line"
-          src={process.env.PUBLIC_URL + "img/x-top-line.svg"}
-        />
       </div>
     </>
   );
