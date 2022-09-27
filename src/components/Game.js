@@ -34,7 +34,9 @@ const Game = () => {
       <Board squares={board} onClick={handleClick} />
       <div>
         <p className="text-center text-white mt-4">
-          {winner ? "Winner: " + winner : "Igralec: " + (xIsNext ? "X" : "O")}
+          {winner
+            ? "Zmagovalec: " + winner
+            : "Igralec: " + (xIsNext ? "X" : "O")}
         </p>
         {renderMoves()}
       </div>
