@@ -65,7 +65,8 @@ h1 {
   background: #FFC700;
   -webkit-box-shadow: 0px 0px 20px 2px #FFC700;
           box-shadow: 0px 0px 20px 2px #FFC700;
-  border-radius: 10px;
+  border: 2px dashed white !important;
+  border-radius: 15px;
   font-size: 25px !important;
   display: -webkit-box;
   display: -ms-flexbox;
